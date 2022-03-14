@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="httpclient_rpc_pojo" />
+        <module name="rmi_rpc_client" />
+        <module name="testRpc_api" />
+        <module name="httpclient_rpc_server" />
+        <module name="zk_client" />
+        <module name="user_selector" />
+        <module name="testRpc" />
+        <module name="user_client" />
+        <module name="rmi_rpc_server" />
+        <module name="httpclient_rpc_client" />
+        <module name="rmi_rpc_api" />
+        <module name="testRpc_server" />
+        <module name="testRpc_client" />
+        <module name="user_service" />
+        <module name="user_api" />
+        <module name="rpc_lsy_framework" />
+        <module name="user_pojo" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="untitled" target="1.5" />
+      <module name="zk_client" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        function sendBodyParams(){
+            //ajax请求不能跨域
+            //跨域- ajax所属站点和被请求的站点不是同一个域
+            //域 - ip 端口 域名 主机名 任何一个有变化 都是不同域
+            //需要服务器返回的响应中增加跨域请求头
+            $.ajax({
+                "url": "http://localhost:80/bodyParams",
+                "type": "post",
+                "data": "[{\"name\":\"abc\",\"password\":\"123\"}," +
+                    "{\"name\":\"abcd\",\"password\":\"123\"}]",
+                //请求体格式 默认是text/plain
+                "contentType": "application/json",
+                "dataType": "json",
+                "success":function(data){
+                    alert(data)
+                    console.log(data)
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+<button onclick="sendBodyParams()">测试ajax请求传递json数据</button>
+
+</body>
+</html>
