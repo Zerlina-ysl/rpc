@@ -24,6 +24,7 @@
         <module name="user_api" />
         <module name="rpc_lsy_framework" />
         <module name="user_pojo" />
+        <module name="nettyRpc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

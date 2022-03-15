@@ -86,7 +86,7 @@ public class RpcRegistry {
 
         String rmi = new String(datas);
         //创建代理对象
-        Remote obj = Naming.lookup(rmi);
+        Remote                                                                                                                                                                                                                                                                                                                                                                                               obj = Naming.lookup(rmi);
         return (T)obj;
 
     }
