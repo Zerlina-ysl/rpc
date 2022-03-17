@@ -7,8 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="rpc-common-api" />
         <module name="httpclient_rpc_pojo" />
+        <module name="rpc-consumer" />
         <module name="rmi_rpc_client" />
+        <module name="rpc-quickStart" />
         <module name="testRpc_api" />
         <module name="httpclient_rpc_server" />
         <module name="zk_client" />
@@ -17,19 +20,32 @@
         <module name="user_client" />
         <module name="rmi_rpc_server" />
         <module name="httpclient_rpc_client" />
-        <module name="rmi_rpc_api" />
+        <module name="rpc-provider" />
         <module name="testRpc_server" />
         <module name="testRpc_client" />
         <module name="user_service" />
-        <module name="user_api" />
+        <module name="rmi_rpc_api" />
         <module name="rpc_lsy_framework" />
+        <module name="user_api" />
         <module name="user_pojo" />
+        <module name="lsy-rpc" />
+        <module name="rpc-center" />
         <module name="nettyRpc" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="untitled" target="1.5" />
-      <module name="zk_client" target="1.5" />
+    <bytecodeTargetLevel target="8">
+      <module name="lsy-rpc" target="1.8" />
+      <module name="rpc-quickStart" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="lsy-rpc" options="-parameters" />
+      <module name="rpc-center" options="-parameters" />
+      <module name="rpc-common-api" options="-parameters" />
+      <module name="rpc-consumer" options="-parameters" />
+      <module name="rpc-provider" options="-parameters" />
+      <module name="rpc-quickStart" options="-parameters" />
+    </option>
   </component>
 </project>
